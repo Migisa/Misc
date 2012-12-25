@@ -11,21 +11,21 @@ script, filename = argv
 def keepOnlyValidChars(string, valid_string):
 	""" Keeps only characters  that are included in the validation string."""
 	final_string = ''
-	check = 0
 	for i in string:
 		if i in valid_string:
-			try:
-				if string[check] == " " and string[check + 1] == " ":
-					pass
-				else:
 					final_string += i
-			except ValueError:
-				print "Value out of range!" 			
 		else:
 			pass
-	check += 1
 	return final_string
 
+def deleteEmpyElements(array_of_words):
+	final_array = []
+	for item in array_of_words:
+		if item in (""," "):
+			pass
+		else:
+			final_array.append(item)
+	return final_array
 # 1. Read in the text
 
 try:
@@ -39,7 +39,7 @@ try:
 	key = 0
 	for line in lines:
 		clean_line = keepOnlyValidChars(line.lower(), condition)
-		new_lines[key] = clean_line.split(' ')
+		new_lines[key] = deleteEmpyElements(clean_line.split(' '))
 		key += 1
 	print new_lines
 except IOError as e:
