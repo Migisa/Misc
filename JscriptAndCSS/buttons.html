@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test JS</title>
+		<script>
+			var msg = function(){
+				alert('This is message to display.');
+			}
+			function submMsg(){
+				alert('Welcome, your details are submitted');
+			}
+			
+			
+			function prompter(){
+				var reply = prompt("What is your name?",'Type name here');
+				alert('Nice to see you ' + reply + '!');
+			}
+			
+			
+			function myPop(){
+				window.open("http://www.google.com/")
+			}
+			
+			
+			function prompMe(){
+				myexp = prompt('Type your name below');
+				var string1 = 'Today alex went to the store with john.';
+				var matchpos1 = string1.search(myexp);
+			
+				if(matchpos1 != -1){
+					document.write("There was a match at position " + matchpos1);
+				}else{
+					document.write("There was no match.");
+				}
+				}
+			
+
+			function notEmpty(){
+				var myTextField = document.getElementById('myText');
+				if(myTextField.value != "")
+					alert('You entered: '+myTextField.value)
+				else
+					alert('Would you please enter some text?')
+			}		
+			
+		</script>
+	</head>
+	
+	<body>
+		<h1>Testing JS</h1>
+		<form>
+			<!-- Alert button with confirmation -->
+			<input type='button' onclick="msg()" value="Confirmation alert"></br></br>
+		</form>
+		<form action='demo_form.asp'>
+			First name: <input type='text' name='fname'/><br>
+			Last name: <input type='text' name='lname'/><br>
+			<input type='submit' value="Submit" onclick='submMsg()'> </br></br>
+			<input type='button' value='Lick me!' onclick='prompter()'/>
+		</form>
+		<form>
+			<!-- Print out the page-->
+			<input type='button' value='Print this page' onClick='window.print()'/>
+			<input type='button' onClick='myPop()' value='Pop!'/>
+			<input type='button' onClick='prompMe()' value='Enter my name'/> </br></br></br>
+		</form>
+		<p onClick='myPop()'>CLICK ME TOO!</p>
+		<input type='text' id='myText'/>
+		<input type='button' onclick='notEmpty()' value='Form Checker'/>
+	</body>
+	
+</html>
