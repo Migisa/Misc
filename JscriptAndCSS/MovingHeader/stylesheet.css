@@ -1,0 +1,21 @@
+#slider {
+	position: absolute;
+	margin: -10px 0 0 -8px;
+	height: 60px;
+	width: 100%;
+	background-color: #008800;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Sans-Serif;
+	display: none;
+}
+
+#clickme{
+	height: 60px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #69D2E7;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Sans-Serif;
+	opacity: 0.5;
+}
