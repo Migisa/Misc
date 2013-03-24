@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$('div').click(function(){
+		$(this).effect('explode');
+	});
+
+	$('div').hover(function(){
+		$(this).effect('bounce', {times:3}, 500);
+	});
+	$('.slide').click(function(){
+		$(this).effect('slide');
+	});
+
+
+});

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select</title>
+		<link rel='stylesheet' type='text/css' href='selectable_stylesheet.css'/>
+		<script type='text/javascript' src='jquery.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='selectable_script.js'></script>
+	</head>
+	<body>
+		<h3>This can be selected</h3>
+        <ol class="select">
+            <li>Super Mario Bros.</li>
+            <li>Tetris</li>
+            <li>Legend of Zelda: Link's Awakening</li>
+            <li>Kirby's Dream World</li>
+            <li>Burger Time</li>
+            <li>Pokémon Red</li>
+            <li>Pokémon Blue</li>
+        </ol>  
+
+		<h3>This can be sorted</h3> 
+        <ol class="select">
+            <li>Super Mario Bros.</li>
+            <li>Tetris</li>
+            <li>Legend of Zelda: Link's Awakening</li>
+            <li>Kirby's Dream World</li>
+            <li>Burger Time</li>
+            <li>Pokémon Red</li>
+            <li>Pokémon Blue</li>
+        </ol>  
+	</body>
+</html>
