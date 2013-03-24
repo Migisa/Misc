@@ -1,0 +1,25 @@
+input {
+	font-family: Verdana, Arial, Sans-Serif;
+	margin-bottom: 20px;
+}
+
+
+.anyevent {
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+	background-color: #FF0000;
+	position: relative;
+	margin-bottom: 100px;
+	
+}
+
+.moveme {
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+	background-color: #006600;
+	position: relative;
+	
+}
+

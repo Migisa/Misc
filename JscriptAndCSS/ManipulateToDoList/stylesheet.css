@@ -1,0 +1,33 @@
+h2 {
+	display: inline-block;
+}
+
+form {
+	display: inline-block;
+}
+
+#button {
+	display: inline-block;
+	height:20px;
+	width:70px;
+	background-color: #cc0000;
+	font-family: arial;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.list {
+	font-family: garamond;
+	font-weight: bold;	
+	color:#cc0000;
+	cursor: pointer;	
+}
+
+.list .item {
+	margin-top: 2px;
+	 
+}
